@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<title>Certifikovaná pedikúra Žiar nad Hronom | Romana Sekerešová</title>
+
+<meta name="description" content="Certifikovaná pedikúra v Žiari nad Hronom s presahom do podológie. Pozrite si cenník a kontaktujte Romanu Sekerešovú.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:locale" content="sk_SK">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Romana Sekerešová – Pedikérka">
+<meta property="og:title" content="Certifikovaná pedikúra Žiar nad Hronom | Romana Sekerešová">
+<meta property="og:description" content="Certifikovaná pedikúra v Žiari nad Hronom s presahom do podológie. Pozrite si cenník a kontaktujte Romanu Sekerešovú.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "Romana Sekerešová – Pedikérka",
+  "description": "Certifikovaná pedikúra s presahom do podológie v Žiari nad Hronom.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Námestie Matice slovenskej 408/2, Hotel Luna",
+    "addressLocality": "Žiar nad Hronom",
+    "postalCode": "965 01",
+    "addressCountry": "SK"
+  },
+  "telephone": "+421902283426",
+  "email": "romanasekeresova@gmail.com"
+}
+</script>
+
+<style>
+:root {
+    --ink: #202027;
+    --muted: #77716e;
+    --pink: #d95783;
+    --rose: #f8e5eb;
+    --paper: #f6f3ef;
+    --line: #d9d1c9;
+    --white: #fffdfa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 94px;
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HLAVIČKA */
+
+header {
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5.5%;
+    background: var(--white);
+    border-bottom: 1px solid #eee6e1;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--ink);
+}
+
+.mark {
+    width: 36px;
+    height: 36px;
+    border: 1.5px solid var(--pink);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: var(--pink);
+    font-size: 19px;
+}
+
+.brand-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.brand-name small {
+    display: block;
+    font: 11px Arial, Helvetica, sans-serif;
+    letter-spacing: 3.5px;
+    color: var(--pink);
+    margin-top: 3px;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+nav a {
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: .4px;
+    transition: color 180ms ease;
+}
+
+nav a:not(.cta):hover,
+nav a:not(.cta):focus-visible {
+    color: var(--pink);
+}
+
+nav .cta {
+    background: var(--ink);
+    color: white;
+    font-size: 13px;
+    padding: 11px 18px;
+    border-radius: 22px;
+}
+
+/* HLAVNÁ ČASŤ */
+
+main {
+    max-width: 1120px;
+    margin: auto;
+    padding: 40px 5.5% 56px;
+}
+
+/* HERO SEKCIА */
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1.08fr;
+    gap: 38px;
+    align-items: center;
+    padding-bottom: 54px;
+}
+
+.kicker {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: var(--pink);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+h1 {
+    font: 700 clamp(38px, 5vw, 64px)/1.03 Arial, Helvetica, sans-serif;
+    letter-spacing: -1.8px;
+    margin: 0 0 18px;
+}
+
+h1 span {
+    color: var(--pink);
+    font-style: italic;
+}
+
+.lead {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #5e5855;
+    max-width: 360px;
+    margin: 0 0 25px;
+}
+
+.button {
+    display: inline-block;
+    background: var(--ink);
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: .6px;
+    padding: 13px 20px;
+    border-radius: 24px;
+}
+
+.hero-image {
+    height: 340px;
+    overflow: hidden;
+    border-radius: 2px;
+    background: var(--rose);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* PREDSTAVENIE */
+
+.about {
+    display: grid;
+    grid-template-columns: 290px minmax(0, 1fr);
+    gap: 42px;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto 54px;
+    padding: 12px 0 32px;
+}
+
+.about-portrait {
+    width: min(100%, 290px);
+    aspect-ratio: 1;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 5px solid var(--white);
+    border-radius: 50%;
+    background: var(--rose);
+    box-shadow: 0 10px 28px rgba(32, 32, 39, .12);
+}
+
+.about-portrait img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 12%;
+}
+
+.about-copy {
+    padding: 28px 32px;
+    border-left: 3px solid var(--pink);
+    background: var(--white);
+}
+
+.about-kicker {
+    margin: 0 0 12px;
+    color: var(--pink);
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+.about-quote {
+    margin: 0;
+    color: #5e5855;
+    font: 500 20px/1.65 "Lora", Georgia, serif;
+}
+
+.about-quote::before {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--pink);
+    content: "“";
+    font: 700 48px/.7 Georgia, serif;
+}
+
+/* CENNÍK */
+
+.section-title {
+    font: 700 32px Arial, Helvetica, sans-serif;
+    letter-spacing: -.5px;
+    margin: 0 0 24px;
+}
+
+.section-title small {
+    display: block;
+    font: 12px Arial, Helvetica, sans-serif;
+    letter-spacing: 2.5px;
+    color: var(--pink);
+    margin-bottom: 9px;
+    text-transform: uppercase;
+}
+
+.prices {
+    padding: 20px 0 46px;
+}
+
+.price-list {
+    border: 1px solid var(--line);
+    background: #fbf9f6;
+}
+
+.price-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    padding: 17px 22px;
+    border-bottom: 1px solid var(--line);
+    align-items: center;
+}
+
+.price-row:last-child {
+    border-bottom: 0;
+}
+
+.price-row .service {
+    font-size: 16px;
+}
+
+.price {
+    font-size: 16px;
+    color: var(--pink);
+    white-space: nowrap;
+}
+
+.price-detail {
+    margin-left: 6px;
+    color: var(--muted);
+    font: 400 12px/1.4 Arial, Helvetica, sans-serif;
+}
+
+.note {
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-top: 13px;
+}
+
+#sluzby .price-row .service,
+#sluzby .price-row .price {
+    font-family: "Lora", Georgia, serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* KONTAKT */
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    padding: 28px 0;
+    border-top: 1px solid var(--line);
+}
+
+.info-card {
+    padding: 4px 18px;
+    border-left: 1px solid var(--pink);
+}
+
+.info-card:first-child {
+    border-left: 0;
+    padding-left: 0;
+}
+
+.info-card h3 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    color: var(--pink);
+    margin: 0 0 10px;
+    text-transform: uppercase;
+}
+
+.info-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #5e5855;
+    margin: 0;
+}
+
+.info-card a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.info-card a:hover {
+    color: var(--pink);
+}
+
+/* PÄTIČKA */
+
+footer {
+    background: #f1e5e7;
+    text-align: center;
+    padding: 26px 5%;
+    font: 600 25px Arial, Helvetica, sans-serif;
+    color: #bd3f70;
+}
+
+footer small {
+    display: block;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #7e6c70;
+    margin-top: 12px;
+    letter-spacing: 1px;
+}
+
+/* RESPONZÍVNY DIZAJN */
+
+@media (min-width: 651px) and (max-width: 850px) {
+
+    .about {
+        grid-template-columns: 250px minmax(0, 1fr);
+        gap: 28px;
+    }
+
+    .info {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+
+    html {
+        scroll-padding-top: 124px;
+    }
+
+    header {
+        height: auto;
+        min-height: 68px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        padding: 12px 5%;
+    }
+
+    .brand-name {
+        font-size: 18px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    nav .cta {
+        font-size: 12px;
+        padding: 9px 12px;
+    }
+
+    main {
+        padding: 24px 5% 34px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-bottom: 34px;
+    }
+
+    .lead {
+        font-size: 17px;
+    }
+
+    .hero-image {
+        height: clamp(210px, 66vw, 280px);
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        margin-bottom: 36px;
+        padding: 0 0 24px;
+    }
+
+    .about-portrait {
+        width: min(72vw, 270px);
+    }
+
+    .about-copy {
+        padding: 22px;
+    }
+
+    .about-quote {
+        font-size: 18px;
+    }
+
+    .prices {
+        padding: 16px 0 36px;
+    }
+
+    .price-row {
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 12px;
+        padding: 14px 16px;
+    }
+
+    .price-row .service,
+    .price {
+        font-size: 15px;
+    }
+
+    .info {
+        grid-template-columns: 1fr;
+        gap: 13px;
+        padding: 22px 0;
+    }
+
+    .info-card,
+    .info-card:first-child {
+        border-left: 1px solid var(--pink);
+        padding: 5px 14px;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+
+    footer {
+        padding: 22px 5%;
+        font-size: 21px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    html {
+        scroll-padding-top: 118px;
+    }
+
+    header {
+        padding: 11px 4%;
+    }
+
+    .mark {
+        width: 32px;
+        height: 32px;
+        font-size: 17px;
+    }
+
+    .brand-name {
+        font-size: 17px;
+    }
+
+    nav {
+        gap: 6px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    nav .cta {
+        font-size: 10px;
+        padding: 8px 9px;
+    }
+
+    main {
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .price-row {
+        gap: 10px;
+        padding: 13px 12px;
+    }
+
+    .price-row .service,
+    .price {
+        font-size: 14px;
+    }
+
+    .note {
+        font-size: 13px;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HLAVIČKA -->
+
+<header>
+
+<a class="brand" href="#top">
+
+<span class="mark">✿</span>
+
+<span class="brand-name">
+Romana Sekerešová
+<small>P E D I K É R K A</small>
+</span>
+
+</a>
+
+<nav>
+<a href="#sluzby">Služby</a>
+<a href="#kontakt">Kontakt</a>
+<a class="cta" href="#kontakt">KONTAKTUJTE MA</a>
+</nav>
+
+</header>
+
+<!-- HLAVNÝ OBSAH -->
+
+<main id="top">
+
+<section class="hero">
+
+<div class="hero-copy">
+
+<div class="kicker">
+Starostlivosť o vaše nohy
+</div>
+
+<h1>
+Profesionálna<br>
+<span>pedikúra</span>
+</h1>
+
+<p class="lead">
+Od estetiky po zdravie. Certifikovaná pedikúra s presahom do podológie. Doprajte svojim nohám úľavu, krásu a odbornú starostlivosť.
+</p>
+
+<a class="button" href="#kontakt">
+OBJEDNAŤ SA
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="hero-pedikura.png"
+alt="Upravené nechty na nohách a jemná wellness starostlivosť">
+
+</div>
+
+</section>
+
+<section class="about" aria-label="Predstavenie pedikérky">
+
+<div class="about-portrait">
+<img src="romana-portret.png" alt="Romana Sekerešová v bielom pracovnom odeve s ružovým lemovaním">
+</div>
+
+<div class="about-copy">
+<p class="about-kicker">Osobné predstavenie</p>
+<blockquote class="about-quote">
+Volám sa Romana a ako pedikérka sa starám o to, aby boli vaše chodidlá nielen krásne, ale predovšetkým zdravé. Spájam precíznu estetickú prácu s hlbokými znalosťami anatómie chodidiel a ich možných porúch.
+</blockquote>
+</div>
+
+</section>
+
+<!-- CENNÍK -->
+
+<section class="prices" id="sluzby">
+
+<h2 class="section-title">
+<small>Prehľad služieb</small>
+Cenník
+</h2>
+
+<div class="price-list">
+
+<div class="price-row">
+<div class="service">Pedikúra mokrá</div>
+<div class="price">27 €</div>
+</div>
+
+<div class="price-row">
+<div class="service">Ošetrenie nechtov</div>
+<div class="price">18 €</div>
+</div>
+
+<div class="price-row">
+<div class="service">Nechtová špona</div>
+<div class="price">18 €</div>
+</div>
+
+<div class="price-row">
+<div class="service">Odstránenie kurieho oka</div>
+<div class="price">12 €</div>
+</div>
+
+<div class="price-row">
+<div class="service">Lakovanie gél lakom</div>
+<div class="price">14 €</div>
+</div>
+
+<div class="price-row">
+<div class="service">Parafínový zábal</div>
+<div class="price">10 €</div>
+</div>
+
+<div class="price-row">
+<div class="service">Wellness pedikúra</div>
+<div class="price">52 €</div>
+</div>
+
+<div class="price-row">
+<div class="service">Reflexná masáž</div>
+<div class="price">17 €</div>
+</div>
+
+<div class="price-row">
+<div class="service">Oklúzia</div>
+<div class="price">12 €</div>
+</div>
+
+<div class="price-row">
+<div class="service">Tamponáda <span class="price-detail">(podľa náročnosti zákroku)</span></div>
+<div class="price">7-12 €</div>
+</div>
+
+</div>
+
+<p class="note">
+Ceny sú orientačné. Pre bližšie informácie
+alebo objednanie ma, prosím, kontaktujte.
+</p>
+
+</section>
+
+<!-- KONTAKT -->
+
+<section class="info" id="kontakt">
+
+<div class="info-card">
+
+<h3>Miesto podnikania</h3>
+
+<p>
+Námestie Matice slovenskej 408/2<br>
+Hotel Luna<br>
+965 01 Žiar nad Hronom
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>E-mail</h3>
+
+<p>
+<a href="mailto:romanasekeresova@gmail.com"
+style="color:inherit;text-decoration:none">
+romanasekeresova@gmail.com
+</a>
+</p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Telefón</h3>
+
+<p><a href="tel:+421902283426">0902 283 426</a></p>
+
+</div>
+
+<div class="info-card">
+
+<h3>Obchodné meno</h3>
+
+<p>
+Romana Sekerešová – Pedikérka<br>
+IČO: 50 196 464<br>
+DIČ: 112 057 6787
+</p>
+
+</div>
+
+</section>
+
+</main>
+
+<!-- PÄTIČKA -->
+
+<footer>
+
+Krásne nohy po celý rok
+
+<small>
+ROMANA SEKEREŠOVÁ · PEDIKÉRKA
+</small>
+
+</footer>
+
+</body>
+</html>
